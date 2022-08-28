@@ -13,8 +13,8 @@ const Header = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto align-items-center">
                         <Nav.Link href="#home"><Icon icon="bi:cart" /></Nav.Link>
-                        <Nav.Link href="#link" >Login</Nav.Link>
-                        <Nav.Link className="" href="#link"><Button variant="danger">Sign Up</Button></Nav.Link>
+                        <Nav.Link as={Link} to='/login' >Login</Nav.Link>
+                        <Nav.Link className="" as={Link} to='/register'><Button variant="danger">Sign Up</Button></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

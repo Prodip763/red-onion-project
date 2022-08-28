@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import useData from "../../hooks/useData/useData";
 import './Home.css';
 import Banner from "./Home/Banner/Banner";
+import Footer from "./Home/Footer/Footer";
+import Product from "./Home/Product/Product";
 import Shop from "./Home/Shop/Shop";
 
 
@@ -15,6 +17,9 @@ const Home = () => {
                 <Link to='/lunch' style={{ color: 'red', textDecoration: 'none', paddingLeft: 13, alignItems:'center',fontSize: 'large', marginTop: '5px' }}>Lunch</Link>
                 <Link to='/dinner' style={{ color: 'red', textDecoration: 'none', paddingLeft: 13, alignItems:'center',fontSize: 'large', marginTop: '5px' }}>Dinner</Link>
                 <Shop></Shop>
+                <Product></Product>
+            <Footer></Footer>
+
         </div>
     );
 };

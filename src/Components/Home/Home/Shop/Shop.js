@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 
 import Row from 'react-bootstrap/Row';
 import Cart from "../../../Pages/Cart/Cart";
+import { Button } from "react-bootstrap";
 
 const Shop = () => {
     const [datas, setdatas] = useData();
@@ -15,6 +16,7 @@ const Shop = () => {
                     datas.map(data => <Cart key={data.id} data={data}></Cart>)
                 }
             </Row>
+            <span ><Button variant="primary">Checkout Your Food</Button></span>
         </Container>
     );
 };

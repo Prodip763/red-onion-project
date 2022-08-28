@@ -6,6 +6,8 @@ import Header from './Components/Header/Header';
 import Breakfast from './Components/Pages/Breakfast/Breakfast';
 import Lunch from './Components/Pages/Lunch/Lunch';
 import Dinner from './Components/Pages/Dinner/Dinner';
+import Login from './Components/Pages/Login/Login';
+import Signup from './Components/Pages/Signup/Signup';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path='/breakfast' element={<Breakfast></Breakfast>}></Route>
         <Route path='/lunch' element={<Lunch></Lunch>}></Route>
         <Route path='/dinner' element={<Dinner></Dinner>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/register' element={<Signup></Signup>}></Route>
       </Routes>
     </div>
   );
